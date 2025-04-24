@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form onsubmit="return validate()">
+    <input id="userid" placeholder="User ID"><br>
+    <input id="password" type="password" placeholder="Password"><br>
+    <input type="submit">
+  </form>
+
+  <script>
+    function validate() {
+      let userid = document.getElementById('userid').value.trim();
+      let password = document.getElementById('password').value.trim();
+
+      // Email pattern
+      let emailPattern = /^\S+@\S+\.\S+$/;
+
+
+      if (!userid || !password) {
+        alert("User ID and Password are required!");
+        return false;
+      }
+
+      // Check if userid is a valid email
+      if (!emailPattern.test(userid)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>

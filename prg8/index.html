@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>Navigator All</title></head> 
+<body> 
+<h3>All Navigator Properties</h3> 
+<table border="1"> 
+<tr><th>Sl.No</th><th>Property</th><th>Value</th></tr> 
+<script> 
+let i = 1; 
+for (let p in navigator) { 
+  document.write(`<tr><td>${i++}</td><td>${p}</td><td>${navigator[p]}</td></tr>`); 
+} 
+</script> 
+</table> 
+</body> 
+</html> 

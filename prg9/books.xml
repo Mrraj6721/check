@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<LIBRARY>  
+  <BOOKS>  
+    <TITLE>Web Programming</TITLE>  
+    <AUTHOR>Robert Sabaste</AUTHOR>  
+    <EDITION>3rd edition</EDITION>  
+    <PUBLISHER>Prentice hall</PUBLISHER> 
+    <PRICE>Rs.450</PRICE>  
+    <YEAR>2015</YEAR>  
+  </BOOKS>  
+  <BOOKS>  
+    <TITLE>Internet Programming</TITLE>  
+    <AUTHOR>Bala Guruswamy</AUTHOR>  
+    <EDITION>1st Edition</EDITION>  
+    <PUBLISHER>cmrims</PUBLISHER>  
+    <PRICE>300</PRICE>  
+    <YEAR>2016</YEAR>  
+  </BOOKS>  
+  <BOOKS>  
+    <TITLE>C++ Programming</TITLE>  
+    <AUTHOR>Bala Govindu</AUTHOR> 
+    <EDITION>3rd Edition</EDITION>  
+    <PUBLISHER>Himalaya</PUBLISHER>  
+    <PRICE>300</PRICE>  
+    <YEAR>2010</YEAR>  
+  </BOOKS>  
+  <BOOKS>  
+    <TITLE>C++ Programming</TITLE>  
+    <AUTHOR>Govindu</AUTHOR>  
+    <EDITION>3rd Edition</EDITION>  
+    <PUBLISHER>aditya publishers</PUBLISHER>  
+    <PRICE>300</PRICE>  
+    <YEAR>2010</YEAR>  
+  </BOOKS>  
+</LIBRARY>

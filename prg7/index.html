@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Propagation</title>
+  <style>
+    .box { padding: 20px;  }
+    #outer { background: #faa; }
+    #middle { background: #aaf; }
+    #inner { background: #afa; }
+  
+  </style>
+</head>
+<body>
+
+<div id="outer" class="box">
+  Outer
+  <div id="middle" class="box">
+    Middle
+    <div id="inner" class="box">
+      Inner
+    </div>
+  </div>
+</div>
+
+<div id="log">Click a box to see event propagation...<br></div>
+
+<script>
+  ['outer', 'middle', 'inner'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('click', () => log.innerHTML += `Capture: ${id}<br>`, true);
+    el.addEventListener('click', () => log.innerHTML += `Bubble: ${id}<br>`);
+  });
+</script>
+
+
+</body>
+</html>

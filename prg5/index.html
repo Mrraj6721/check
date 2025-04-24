@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="pink">
+    <center>
+        <div style="background-color: aqua; width: 300px;height: 200px;">
+  <h3>EMI Calculator</h3>
+  <table style="text-align: center;">
+  <label>Amount</label>
+  <input id="a" placeholder="Amount"><br><br>
+  <label>Intrest Rate</label>
+  <input id="r" placeholder="Rate"><br><br>
+  <label>months</label> 
+  <input id="m" placeholder="Months"><br><br>
+  <button onclick="c()">Calc</button>
+  <div id="o"></div>
+  <script>
+    function c() {
+      let A = +a.value, R = +r.value/1200, M = +m.value;
+      let e = A*R*Math.pow(1+R,M)/(Math.pow(1+R,M)-1);
+      o.innerHTML = `Calculate: ₹${e.toFixed()}`;
+    }
+  </script>
+  </table>
+</div>
+  </center>
+
+</body>
+</html>

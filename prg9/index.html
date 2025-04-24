@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    try {
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "books.xml", false);
+      xhr.send();
+      const xml = xhr.responseXML;
+      const books = xml.getElementsByTagName("BOOKS");
+
+      document.write("<table><tr><th>Title</th><th>Author</th><th>Edition</th><th>Publisher</th><th>Price</th><th>Year</th></tr>");
+
+      for (let i = 0; i < books.length; i++) {
+        const get = tag => books[i].getElementsByTagName(tag)[0].textContent;
+        document.write(`<tr>
+          <td>${get("TITLE")}</td>
+          <td>${get("AUTHOR")}</td>
+          <td>${get("EDITION")}</td>
+          <td>${get("PUBLISHER")}</td>
+          <td>${get("PRICE")}</td>
+          <td>${get("YEAR")}</td>
+        </tr>`);
+      }
+
+      document.write("</table>");
+    } catch (e) {
+      alert("Error: " + e.message);
+    }
+  </script>
+</body>
+</html>
