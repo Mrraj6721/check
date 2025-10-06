@@ -1,5 +1,4 @@
 #Prg1
-
 library(dplyr)
 n<-as.integer(readline("Enter how many records you want to enter:"))
 data<-data.frame(Name=character(),Age=integer(),Salary=double(),stringsAsFactors = FALSE)
@@ -22,8 +21,6 @@ print(data)
 
 
 #Prg2
-
-
 library(readr)      
 library(readxl)      
 library(writexl)    
@@ -47,9 +44,8 @@ cat("TXT Data exported")
 
 
 
+
 #Prg3
-
-
 install.packages("moments") 
 library(moments) 
 
@@ -76,9 +72,11 @@ cat("Range:", range_val, "\n")
 par(mfrow=c(1,2)) 
 hist(data, main="Histogram of Data", col="skyblue", border="black")
 
+
+
+
+
 #Prg4
-
-
 install.packages("mice") 
 library(mice) 
 
@@ -98,8 +96,9 @@ print(cleaned)
 print(completed)
 
 
-#Prg5
 
+
+#Prg5
 data <- data.frame( 
   ID = 1:5, 
   Marks = c(45, 78, 88, 60, 90) 
@@ -113,5 +112,6 @@ data$Normalized_Marks <- normalize(data$Marks)
 
 cat("Original and Normalized Data:\n") 
 print(data)
+
 
 
