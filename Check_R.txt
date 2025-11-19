@@ -131,7 +131,7 @@ print(data)
 
 
 # install.packages("ggplot2")
-# library(ggplot2")
+# library(ggplot2)
 
 rm(list = ls())
 
@@ -282,6 +282,7 @@ print("Original Data:")
 print(data)
 print("Cleaned Data (Outliers Removed):")
 print(clean_data)
+
 
 
 
